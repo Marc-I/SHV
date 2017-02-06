@@ -1,11 +1,22 @@
 {
   "name": "shv-fsvl",
   "version": "1.0.0",
-  "description": "",
+  "description": "Click Dummy",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Marc Iten Websolutions",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-sass": "^2.3.2"
+  },
+  "dependencies": {
+    "aurelia-framework": "^1.0.8",
+    "aurelia-router": "^1.1.1"
+  }
 }
