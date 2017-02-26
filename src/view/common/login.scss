@@ -1,0 +1,22 @@
+@import "../../styles/colors";
+
+main.login {
+  form {
+    margin: auto;
+    max-width: 300px;
+  }
+
+  img {
+    margin: 24px 0;
+    width: 300px;
+  }
+
+  .button {
+    text-align: center;
+    padding: 8px 0;
+
+    button {
+      width: 100%;
+    }
+  }
+}

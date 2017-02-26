@@ -1,10 +1,12 @@
 <template>
-  <require from="view/common/nav-bar.html"></require>
-  <require from="bootstrap/css/bootstrap.css"></require>
+    <require from="view/common/nav-bar.html"></require>
+    <require from="view/common/footer-bar.html"></require>
 
-  <nav-bar router.bind="router"></nav-bar>
+    <require from="./app.css"></require>
 
-  <div class="page-host">
-    <router-view></router-view>
-  </div>
+    <nav-bar router.bind="router" containerless></nav-bar>
+
+    <router-view containerless></router-view>
+
+    <footer-bar containerless></footer-bar>
 </template>

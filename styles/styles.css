@@ -1,5 +1,46 @@
+@font-face{
+  font-family:"DIN Next LT W04 Bold";
+  src:url('../fonts/DIN Next LT W04 Bold.eot');
+  src:url('../fonts/DIN Next LT W04 Bold.eot') format("eot"),
+  url('../fonts/DIN Next LT W04 Bold.woff2') format("woff2"),
+  url('../fonts/DIN Next LT W04 Bold.woff') format("woff"),
+  url('../fonts/DIN Next LT W04 Bold.ttf') format("truetype"),
+  url('../fonts/DIN Next LT W04 Bold.svg') format("svg");
+}
+
+@font-face{
+  font-family:"DIN Next W01 Light";
+  src:url('../fonts/DIN Next W01 Light.eot');
+  src:url('../fonts/DIN Next W01 Light.eot') format("eot"),
+  url('../fonts/DIN Next W01 Light.woff2') format("woff2"),
+  url('../fonts/DIN Next W01 Light.woff') format("woff"),
+  url('../fonts/DIN Next W01 Light.ttf') format("truetype"),
+  url('../fonts/DIN Next W01 Light.svg') format("svg");
+}
+
+@font-face{
+  font-family:"Eurostile LT W01 Bold E";
+  src:url('../fonts/Eurostile LT W01 Bold E.eot');
+  src:url('../fonts/Eurostile LT W01 Bold E.eot') format("eot"),
+  url('../fonts/Eurostile LT W01 Bold E.woff2') format("woff2"),
+  url('../fonts/Eurostile LT W01 Bold E.woff') format("woff"),
+  url('../fonts/Eurostile LT W01 Bold E.ttf') format("truetype"),
+  url('../fonts/Eurostile LT W01 Bold E.svg') format("svg");
+}
+
+@font-face{
+  font-family:"Eurostile LT W01 Bold";
+  src:url('../fonts/Eurostile LT W01 Bold.eot');
+  src:url('../fonts/Eurostile LT W01 Bold.eot') format("eot"),
+  url('../fonts/Eurostile LT W01 Bold.woff2') format("woff2"),
+  url('../fonts/Eurostile LT W01 Bold.woff') format("woff"),
+  url('../fonts/Eurostile LT W01 Bold.ttf') format("truetype"),
+  url('../fonts/Eurostile LT W01 Bold.svg') format("svg");
+}
+
 body {
   margin: 0;
+  font-family: "DIN Next W01 Light", Helvetica, Arial, sans-serif;
 }
 
 .splash {

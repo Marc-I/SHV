@@ -1,18 +1,30 @@
 <template>
 
-    <form submit.delegate="login()">
-        <div>
-            <img src="images/logo.svg" alt="shv/fsvl" />
-        </div>
-        <div>
-            <input type="text" placeholder="Beutzername">
-        </div>
-        <div>
-            <input type="password" placeholder="Passwort">
-        </div>
-        <div>
-            <button type="submit">einloggen</button>
-        </div>
-    </form>
+    <require from="./login.css"></require>
+
+    <main class="login">
+        <form submit.delegate="login()">
+            <div>
+                <img src="images/logo.svg" alt="shv/fsvl"/>
+            </div>
+
+            <div class="group">
+                <input type="text" required>
+                <span class="bar"></span>
+                <label>Benutzername</label>
+            </div>
+
+            <div class="group">
+                <input type="password" required>
+                <span class="bar"></span>
+                <label>Passwort</label>
+            </div>
+
+            <div class="button">
+                <button type="submit">einloggen</button>
+            </div>
+
+        </form>
+    </main>
 
 </template>

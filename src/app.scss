@@ -1,0 +1,41 @@
+@import "styles/fonts";
+@import "styles/colors";
+
+* { box-sizing:border-box; }
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "DIN Next W01 Light", Helvetica, Arial, sans-serif;
+  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.8) 20%, rgba(255, 255, 255, 0.99) 100%), url('../images/bg.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+main {
+  flex-grow: 1;
+  margin: auto;
+  padding: 8px;
+  max-width: 800px;
+  overflow: auto;
+}
+
+a {
+  text-decoration: none;
+  color: $textLink;
+}
+
+button {
+  padding: 8px;
+  background-color: $bgButtons;
+  border: none;
+  border-radius: 8px;
+  color: $textButtons;
+  font-size: 1.5em;
+}
+
+@import "styles/input";

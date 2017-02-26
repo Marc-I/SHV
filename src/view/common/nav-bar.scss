@@ -1,0 +1,90 @@
+@import "../../styles/colors";
+
+nav {
+  background-color: $bgNav;
+
+  a {
+    color: $textNav;
+  }
+
+  a.logo {
+    padding: 8px;
+    float: left;
+  }
+
+  ul li {
+    list-style: none;
+    padding: 8px;
+
+    &:hover {
+      background-color: lighten($bgNav, 20%);
+    }
+  }
+
+  .mobile.bg.open {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 98;
+  }
+
+  .mobile.button {
+    position: relative;
+    display: block;
+    margin: 8px;
+    width: 24px;
+    height: 20px;
+    border-top: 4px solid $textNav;
+    border-bottom: 4px solid $textNav;
+    float: right;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 4px;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background-color: $textNav;
+    }
+  }
+
+  @media all and (max-width: 480px) {
+    ul {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      min-width: 40%;
+      margin: 0;
+      padding: 0;
+      background-color: $bgNav;
+      transform: translateX(-100%);
+      transition: transform 0.2s ease;
+      z-index: 99;
+
+      &.open {
+        transform: translateX(0);
+      }
+    }
+  }
+
+  @media all and (min-width: 481px) {
+    ul {
+      float: right;
+      margin: 0;
+      padding: 0;
+
+      li {
+        float: left;
+      }
+    }
+
+    .mobile.button {
+      display: none;
+    }
+  }
+}
